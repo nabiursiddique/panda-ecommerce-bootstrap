@@ -12,9 +12,9 @@
     />
   </head>
   <body>
-    <header class="container">
+    <header class="container" id="home">
       <!-- navbar start  -->
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar fixed-top navbar-expand-lg bg-light">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="./images/logo.png" alt="" />
@@ -33,16 +33,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shoes</a>
+                <a class="nav-link" href="#shoes">Shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Backpack</a>
+                <a class="nav-link" href="#backpacks">Backpack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Subscribe</a>
+                <a class="nav-link" href="#subscribe">Subscribe</a>
               </li>
             </ul>
           </div>
@@ -183,7 +183,7 @@
       <!-- catagories end -->
 
       <!-- shoes section start  -->
-      <section class="container my-5">
+      <section class="container my-5" id="shoes">
         <h2>Shoes</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
@@ -254,7 +254,7 @@
       <!-- shoes section end -->
 
       <!-- Backpack section start  -->
-      <section class="container my-5">
+      <section class="container my-5" id="backpacks">
         <h2>Backpack</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
@@ -323,7 +323,32 @@
         </div>
       </section>
       <!-- Backpack section end -->
+
+      <!-- subscribe section start  -->
+      <section style="height:350px;" class="container my-5 rounded-3 d-flex justify-content-center align-items-center bg-info" id="subscribe">
+        <div>
+          <h2>LET'S STAY IN TOUCH</h2>
+          <p>Get updates on sales, special and more</p>
+          <form>
+            <div class="mb-2">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <button type="submit" class="btn btn-warning">Submit</button>
+          </form>
+        </div>
+      </section>
+      <!-- subscribe section end  -->
     </main>
+
+    <!-- footer section  -->
+    <footer class="mt-5 text-center">
+        <p><small>&copy; 2022 panda commerce. All right reserved.Nabil </small></p>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
